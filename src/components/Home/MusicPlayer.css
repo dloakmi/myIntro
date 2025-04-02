@@ -20,6 +20,7 @@
     background-color: #151024;
     height: auto;
     width: 50%; /* 宽度为页面宽度的 80% */
+    max-height: 300px;
     max-width: 1200px; /* 最大宽度为 1200 像素 */
     margin: 0 auto; /* 水平居中 */
     display: flex;

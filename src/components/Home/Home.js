@@ -4,13 +4,13 @@ import homeLogo from "../../Assets/trueMusic.jpg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import MusicPlayer from "./MusicPlayer";
+
 
 
 function Home() {
   return (
       <section>
-
+        <Particle/>
         <Container fluid className="home-section" id="home">
           <Container className="home-content">
             <Row>
@@ -44,7 +44,7 @@ function Home() {
             </Row>
           </Container>
         </Container>
-        <MusicPlayer/>
+
         <Home2/>
       </section>
   );
