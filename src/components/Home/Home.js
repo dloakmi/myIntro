@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/trueMusic.jpg";
+import homeLogo from "../../Assets/danshiwojujue.jpg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
@@ -24,8 +24,7 @@ function Home() {
 
                 <h1 className="heading-name">
                   我是
-                  <strong className="main-name"> 超级大支佬 </strong>
-                  笑航神
+                  <strong className="main-name"> 机智 的 赛尔 </strong>
                 </h1>
 
                 <div style={{padding: 50, textAlign: "left"}}>
@@ -44,7 +43,6 @@ function Home() {
             </Row>
           </Container>
         </Container>
-
         <Home2/>
       </section>
   );
