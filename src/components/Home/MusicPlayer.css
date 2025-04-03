@@ -19,7 +19,7 @@
 
 }
 .music-body {
-    background-color: #151024;
+    background-color: transparent;
     height: auto;
     width: 90%; /* 宽度为页面宽度的 80% */
     max-height: 300px;

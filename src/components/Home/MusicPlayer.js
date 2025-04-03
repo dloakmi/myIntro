@@ -114,9 +114,6 @@ function MusicPlayer() {
 
     return (
         <div className="music-body">
-
-
-
             <div className={`music-container ${isPlaying ? 'play' : ''}`}>
                 <div className="img-container">
                     <img src={currentSong.cover} alt={`${currentSong.title} Cover`}/>
