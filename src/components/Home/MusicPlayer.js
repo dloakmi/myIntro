@@ -1,11 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './MusicPlayer.css'; // 确保引入CSS文件
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStepBackward,
-    faPauseCircle,
-    faPlayCircle,
-    faStepForward,
-    faVolumeHigh,} from '@fortawesome/free-solid-svg-icons';
+import {
+    AiFillAudio,
+    AiFillStepBackward,
+    AiFillStepForward,
+    AiOutlinePauseCircle,
+    AiOutlinePlayCircle
+} from "react-icons/ai";
 
 function MusicPlayer() {
 
@@ -137,7 +138,7 @@ function MusicPlayer() {
                             setIsVolumeVisible(!isVolumeVisible);
                         }}
                     >
-                        <FontAwesomeIcon icon={faVolumeHigh} />
+                        <AiFillAudio />
                     </button>
 
                     {/* 垂直音量控制条 */}
@@ -170,15 +171,13 @@ function MusicPlayer() {
 
                 <div className="navigation">
                     <button className="action-btn" onClick={prevSong}>
-                        <FontAwesomeIcon icon={faStepBackward} />
+                        <AiFillStepBackward />
                     </button>
                     <button className="action-btn action-btn-big" onClick={togglePlayPause}>
-                        <FontAwesomeIcon
-                            icon={isPlaying ? faPauseCircle : faPlayCircle}
-                        />
+                        {isPlaying ? <AiOutlinePauseCircle/> : <AiOutlinePlayCircle/>}
                     </button>
                     <button className="action-btn" onClick={nextSong}>
-                        <FontAwesomeIcon icon={faStepForward} />
+                        <AiFillStepForward />
                     </button>
                 </div>
                 <audio

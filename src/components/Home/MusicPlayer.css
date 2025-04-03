@@ -97,8 +97,8 @@
 
 .navigation {
     position: absolute; /* 使用绝对定位 */
-    bottom: 8%;
-    right: 18%;
+    bottom: -3%;
+    right: 14%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,7 +114,7 @@
     font-size: 35px;
     cursor: pointer;
     padding: 10px;
-    margin: 0 20px;
+    margin: 10px 15px 10px 15px;
     z-index: 20; /* 设置为最上层 */
 }
 
@@ -129,12 +129,12 @@
 }
 
 .action-btn.action-btn-big {
-    color: white; /* 白色文字 */
-    font-size: 35px;
-    background-color: #8a49a8; /* 红色背景 */
+    color: #8a49a8; /* 白色文字 */
+    font-size: 40px;
+    background-color: #ffffff;
     border-radius: 100%;
     padding: 2px;
-
+    margin: 10px 10px 5px 10px;
     /* 使用 Flexbox 将图标居中 */
     display: flex;
     align-items: center; /* 垂直居中 */
@@ -184,7 +184,7 @@
     background-color: whitesmoke; /* 进度条背景颜色 */
     border-radius: 5px; /* 圆角效果 */
     cursor: pointer;    /* 鼠标悬停时显示手型 */
-    height: 8px;        /* 进度条高度 */
+    height: 10px;        /* 进度条高度 */
     width: 65%;         /* 初始宽度，可以根据需要调整 */
     max-width: 100%;    /* 最大宽度限制 */
     overflow: hidden;
@@ -195,7 +195,7 @@
     border-radius: 10px;
     height: 100%;
     /* 一开始进度条长度为0 */
-    width: 0;
+
     transition: width 0.1s linear;
 }
 
@@ -208,7 +208,7 @@
     color: #8a49a8; /* 按钮文字颜色改为黑色以便可见 */
     border: none;
     padding: 3px 3px; /* 设置内边距，确保宽度一致 */
-    font-size: 23px;
+    font-size: 27px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -251,10 +251,10 @@
 
 /* 容器样式 */
 .volume-container {
-    width: 20px;
+    width: 25px;
     height: 160px;
     position: absolute;
-    bottom: 30%;
-    right: 10%;
+    bottom: 28%;
+    right: 8%;
 }
 
