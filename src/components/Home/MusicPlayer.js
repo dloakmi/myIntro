@@ -23,10 +23,10 @@ function MusicPlayer() {
     const volumeContainerRef = useRef(null);
 
     const songs = [
-        { title: '打上花火', src: '/music/打上花火.mp3', cover: '/img/打上花火.jpg' },
-        { title: 'Mojito', src: '/music/Mojito.mp3', cover: '/img/Mojito.jpg' },
-        { title: 'Super Star', src: '/music/Super_Star.mp3', cover: '/img/Super_Star.jpg' },
-        { title: '离人', src: '/music/离人.mp3', cover: '/img/离人.jpg' },
+        { title: '杜王町早上好', src: '/music/杜王町早上好.ogg', cover: '/img/杜王町早上好.png' },
+        { title: '黑帮摇', src: '/music/黑帮摇.flac', cover: '/img/黑帮摇.png' },
+        { title: '黄金之风处刑曲', src: '/music/黄金之风_处刑曲.mp3', cover: '/img/黄金之风_处刑曲.png' },
+
     ];
 
     const currentSong = songs[songIndex];
@@ -77,6 +77,10 @@ function MusicPlayer() {
         }
         setIsPlaying(!isPlaying);
     };
+    const handleSongEnd = () => {
+        nextSong();
+        // 自动切换到下一首
+    };
 
     const handleVolumeChange = (event) => {
         const newVolume = parseFloat(event.target.value);
@@ -102,11 +106,13 @@ function MusicPlayer() {
     const prevSong = () => {
         setIsPlaying(false); // 暂停当前歌曲
         setSongIndex((prevIndex) => (prevIndex === 0 ? songs.length - 1 : prevIndex - 1));
+        setIsPlaying(true);
     };
 
     const nextSong = () => {
         setIsPlaying(false); // 暂停当前歌曲
         setSongIndex((prevIndex) => (prevIndex === songs.length - 1 ? 0 : prevIndex + 1));
+        setIsPlaying(true);
     };
 
 
@@ -182,6 +188,8 @@ function MusicPlayer() {
                     src={currentSong.src}
                     onTimeUpdate={updateCurrentTime}
                     onLoadedMetadata={() => setDuration(audioRef.current.duration)}
+                    onEnded={handleSongEnd}
+
                 />
             </div>
 
