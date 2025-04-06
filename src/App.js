@@ -16,7 +16,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import MusicPlayer from "./components/Home/MusicPlayer";
+import MusicPlayer from "./components/musicPlayer/MusicPlayer";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       upadateLoad(false);
-    }, 1200);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, []);
