@@ -8,7 +8,7 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{textAlign: "justify"}}>
-            我 的 名 字 是 <span className="purple">王 晟 梁 </span>
+            我 的 名 字 是 <span className="purple">冰 咖 小 青 柠 </span>
             ，2 4 岁。住 在 <span className="purple"> 中 国 海 洋 大 学 崂 山 区 一 带.</span>
             <br/>
             我 在 × × 科 技 公 司 实 习，每 天 最 晚 6 点 下 班 回 家。
@@ -39,7 +39,7 @@ function AboutCard() {
           <p style={{ color: "rgb(155 126 172)" }}>
             "我 只 是 想 当 一 名 普 通 的 研 究 生 而 已 !"{" "}
           </p>
-          <footer className="blockquote-footer">吉 晟 吉 梁</footer>
+          <footer className="blockquote-footer">冰 咖 小 青 柠</footer>
         </blockquote>
       </Card.Body>
     </Card>

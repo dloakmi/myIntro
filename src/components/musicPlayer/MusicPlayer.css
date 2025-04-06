@@ -22,7 +22,7 @@
     background-color: transparent;
     height: auto;
     width: 90%; /* 宽度为页面宽度的 80% */
-    max-height: 300px;
+    max-height: 200px;
     max-width: 1200px; /* 最大宽度为 1200 像素 */
     margin: 0 auto; /* 水平居中 */
     display: flex;
@@ -97,9 +97,10 @@
 }
 
 .navigation {
-    position: absolute; /* 使用绝对定位 */
-    bottom: -3%;
-    right: 14%;
+    position: absolute;
+    bottom: 19%;
+    right: 30%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,9 +115,23 @@
     color: #8a49a8;
     font-size: 35px;
     cursor: pointer;
-    padding: 10px;
-    margin: 10px 15px 10px 15px;
-    z-index: 20; /* 设置为最上层 */
+
+    margin: 0 20px 0 20px;
+    z-index: 10; /* 设置为最上层 */
+}
+
+@media (max-width: 480px) {
+    .action-btn {
+        font-size: 30px;
+        margin: 0 5px 0 5px;
+    }
+    .action-btn.action-btn-big{
+        font-size: 35px;
+    }
+    .volume-container{
+        width: 20px;
+    }
+
 }
 
 .action-btn:hover {

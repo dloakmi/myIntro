@@ -37,22 +37,22 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          个人 <strong className="purple">技术栈 </strong>
         </h1>
 
         <Techstack/>
 
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use &nbsp;&nbsp;&nbsp; Σ（ﾟдﾟlll）
+          常 用 <strong className="purple">工 具 </strong>  &nbsp;&nbsp;&nbsp; Σ（ﾟдﾟlll）
         </h1>
         <Toolstack/>
 
         <Github/>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1><span className="purple">点 击</span> 下 方</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              快 速 <span className="purple">联 系 </span>我
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
