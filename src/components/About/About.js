@@ -14,11 +14,7 @@ import {IoLogoWechat} from "react-icons/io5";
 
 function About() {
 
-  const [isImageVisible, setIsImageVisible] = useState(false);
 
-  const toggleImageVisibility = () => {
-    setIsImageVisible(!isImageVisible);
-  };
 
   return (
     <Container fluid className="about-section">
