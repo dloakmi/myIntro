@@ -120,7 +120,7 @@
     z-index: 10; /* 设置为最上层 */
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
     .action-btn {
         font-size: 30px;
         margin: 0 5px 0 5px;

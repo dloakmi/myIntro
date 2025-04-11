@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
@@ -7,12 +7,22 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/jljy.png";
 import Toolstack from "./Toolstack";
 import {AiFillGithub} from "react-icons/ai";
-import {FaTiktok} from "react-icons/fa";
+import {FaQq, FaTiktok} from "react-icons/fa";
+import {IoLogoWechat} from "react-icons/io5";
+
+
 
 function About() {
+
+  const [isImageVisible, setIsImageVisible] = useState(false);
+
+  const toggleImageVisibility = () => {
+    setIsImageVisible(!isImageVisible);
+  };
+
   return (
     <Container fluid className="about-section">
-      <Particle />
+      <Particle/>
       <Container>
         <Row style={{justifyContent: "center", padding: "10px"}}>
           <Col
@@ -55,6 +65,30 @@ function About() {
               快 速 <span className="purple">联 系 </span>我
             </p>
             <ul className="home-about-social-links">
+              <li className="social-icons">
+                <a
+                    href="/img/QQ.png"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour home-social-icons-img">
+                  <FaQq/>
+                </a>
+                <div className="social-icons-img-container">
+                  <img src="/img/QQ.png"/>
+                </div>
+              </li>
+              <li className="social-icons">
+                <a
+                    href="/img/wechat.png"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour home-social-icons-img">
+                  <IoLogoWechat/>
+                </a>
+                <div className="social-icons-img-container">
+                  <img src="/img/wechat.png"/>
+                </div>
+              </li>
               <li className="social-icons">
                 <a
                     href="https://github.com/dloakmi"
@@ -104,6 +138,7 @@ function About() {
                   <FaTiktok/>
                 </a>
               </li>
+
             </ul>
           </Col>
         </Row>
