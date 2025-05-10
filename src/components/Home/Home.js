@@ -34,7 +34,7 @@ function Home() {
 
               <Col md={5} style={{paddingBottom: 20}}>
                 <img
-                    src={homeLogo}
+                    src='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/danshiwojujue.jpg'
                     alt="home pic"
                     className="img-fluid"
                     style={{maxHeight: "450px"}}

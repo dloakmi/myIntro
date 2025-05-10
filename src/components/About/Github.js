@@ -9,7 +9,7 @@ function Github() {
          <strong className="purple">代 码 </strong>提 交 量
       </h1>
       <GitHubCalendar
-        username="soumyajit4419"
+        username="dloakmi"
         blockSize={15}
         blockMargin={5}
         color="#c084f5"

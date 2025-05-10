@@ -44,7 +44,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar"/>
+              <img src='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/gege.svg' className="img-fluid" alt="avatar"/>
             </Tilt>
           </Col>
         </Row>

@@ -15,6 +15,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import {TiCloudStorage} from "react-icons/ti";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -94,11 +95,11 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://blog.csdn.net/m0_66387193"
+                href="http://117.72.127.86:5244"
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> 博客
+                <TiCloudStorage style={{ marginBottom: "2px" }} /> 网盘
               </Nav.Link>
             </Nav.Item>
 

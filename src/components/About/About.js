@@ -39,7 +39,7 @@ function About() {
               style={{paddingTop: "100px", paddingBottom: "50px"}}
               className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid"/>
+            <img src='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/jljy.png' alt="about" className="img-fluid"/>
           </Col>
         </Row>
         <h1 className="project-heading">
