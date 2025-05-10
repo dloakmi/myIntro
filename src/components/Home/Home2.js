@@ -8,6 +8,8 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import homeLogo from "../../Assets/danshiwojujue.jpg";
+import MyImage from "../backupPic";
 
 function Home2() {
   return (
@@ -44,7 +46,11 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/gege.svg' className="img-fluid" alt="avatar"/>
+              <MyImage
+                   primarySrc='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/gege.svg'
+                   backupSrc = {myImg}
+                   className="img-fluid"
+                   alt="avatar"/>
             </Tilt>
           </Col>
         </Row>

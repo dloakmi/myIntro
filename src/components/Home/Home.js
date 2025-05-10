@@ -4,6 +4,8 @@ import homeLogo from "../../Assets/danshiwojujue.jpg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import MyImage from "../backupPic";
+import laptopImg from "../../Assets/jljy.png";
 
 
 
@@ -33,8 +35,9 @@ function Home() {
               </Col>
 
               <Col md={5} style={{paddingBottom: 20}}>
-                <img
-                    src='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/danshiwojujue.jpg'
+                <MyImage
+                    primarySrc='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/danshiwojujue.jpg'
+                    backupSrc = {homeLogo}
                     alt="home pic"
                     className="img-fluid"
                     style={{maxHeight: "450px"}}

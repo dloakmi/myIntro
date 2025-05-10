@@ -7,6 +7,8 @@ import {
     AiOutlinePauseCircle,
     AiOutlinePlayCircle
 } from "react-icons/ai";
+import MyImage from "../backupPic";
+import homeLogo from "../../Assets/danshiwojujue.jpg";
 
 function MusicPlayer() {
 
@@ -23,13 +25,13 @@ function MusicPlayer() {
     const volumeContainerRef = useRef(null);
 
     const songs = [
-        { title: '杜王町早上好', src: 'https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/music_bed/%E6%9D%9C%E7%8E%8B%E7%94%BA%E6%97%A9%E4%B8%8A%E5%A5%BD.mp3', cover: 'https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/%E6%9D%9C%E7%8E%8B%E7%94%BA%E6%97%A9%E4%B8%8A%E5%A5%BD.png' },
-        { title: '黑帮摇', src: 'https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/music_bed/%E9%BB%91%E5%B8%AE%E6%91%87.mp3', cover: 'https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/%E9%BB%91%E5%B8%AE%E6%91%87.png' },
-        { title: '黄金之风处刑曲', src: 'https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/music_bed/%E9%BB%84%E9%87%91%E4%B9%8B%E9%A3%8E_%E5%A4%84%E5%88%91%E6%9B%B2.mp3', cover: 'https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/%E9%BB%84%E9%87%91%E4%B9%8B%E9%A3%8E_%E5%A4%84%E5%88%91%E6%9B%B2.png' },
-
+        { title: '杜王町早上好', src: '/music/杜王町早上好.mp3', backupSong:'./abc' ,backupImg:'/img/杜王町早上好.png', cover: 'https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/%E6%9D%9C%E7%8E%8B%E7%94%BA%E6%97%A9%E4%B8%8A%E5%A5%BD.png' },
+        { title: '黑帮摇', src: '/music/黑帮摇.mp3', backupImg:'/img/黑帮摇.png', backupSong:'/img/黑帮摇.png', cover: 'https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/%E9%BB%91%E5%B8%AE%E6%91%87.png' },
+        { title: '黄金之风处刑曲', src: '/music/黄金之风_处刑曲.mp3', backupSong:'./abc', backupImg:'/img/黄金之风_处刑曲.png', cover: 'https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/%E9%BB%84%E9%87%91%E4%B9%8B%E9%A3%8E_%E5%A4%84%E5%88%91%E6%9B%B2.png' },
     ];
 
     const currentSong = songs[songIndex];
+
 
     useEffect(() => {
         // 添加全局点击事件监听器
@@ -127,7 +129,9 @@ function MusicPlayer() {
         <div className="music-body">
             <div className={`music-container ${isPlaying ? 'play' : ''}`}>
                 <div className="img-container">
-                    <img src={currentSong.cover} alt={`${currentSong.title} Cover`}/>
+                    <img
+                             src = {currentSong.backupImg}
+                             alt={`${currentSong.title} Cover`}/>
                 </div>
 
                 <div className="music-info">

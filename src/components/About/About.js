@@ -9,6 +9,7 @@ import Toolstack from "./Toolstack";
 import {AiFillGithub} from "react-icons/ai";
 import {FaQq, FaTiktok} from "react-icons/fa";
 import {IoLogoWechat} from "react-icons/io5";
+import MyImage from "../backupPic";
 
 
 
@@ -39,7 +40,7 @@ function About() {
               style={{paddingTop: "100px", paddingBottom: "50px"}}
               className="about-img"
           >
-            <img src='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/jljy.png' alt="about" className="img-fluid"/>
+            <MyImage primarySrc='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/jljy.png' backupSrc = {laptopImg} alt="about" className="img-fluid"/>
           </Col>
         </Row>
         <h1 className="project-heading">

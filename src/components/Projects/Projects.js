@@ -21,38 +21,42 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/project/choujiang.png'
-              isBlog={false}
-              title="抽奖平台 v1"
-              description="介 绍 ：大 营 销 平 台 是 各 个 互 联 网 公 司 用 于 拉 新 、促 活 、留 存 、转 化 的 重 要 手 段 ，任 何 一 个 互 联 网 公 司 都 有 这 样 的 平 台 ，每 个 公 司 都 能 找 到 对 口 的 业 务 部 门。"
-              ghLink="https://github.com/dloakmi/big-market"
-              demoLink="http://117.72.127.86:3000/?strategyId=100006"
+                primarySrc='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/project/choujiang.png'
+                backupSrc={choujiang}
+                isBlog={false}
+                title="抽奖平台 v1"
+                description="介 绍 ：大 营 销 平 台 是 各 个 互 联 网 公 司 用 于 拉 新 、促 活 、留 存 、转 化 的 重 要 手 段 ，任 何 一 个 互 联 网 公 司 都 有 这 样 的 平 台 ，每 个 公 司 都 能 找 到 对 口 的 业 务 部 门。"
+                ghLink="https://github.com/dloakmi/big-market"
+                demoLink="http://117.72.127.86:3000/?strategyId=100006"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/project/zuopinji.png'
-              isBlog={false}
-              title="个人介绍+作品集"
-              description="基于作者Soumyajit4419开源的作品集项目https://github.com/soumyajit4419/Portfolio，进行二次加工，添加了音乐播放器以及新的动态效果"
-              ghLink="https://github.com/dloakmi/myIntro"
+                primarySrc='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/project/zuopinji.png'
+                backupSrc={zuopinji}
+                isBlog={false}
+                title="个人介绍+作品集"
+                description="基于作者Soumyajit4419开源的作品集项目https://github.com/soumyajit4419/Portfolio，进行二次加工，添加了音乐播放器以及新的动态效果"
+                ghLink="https://github.com/dloakmi/myIntro"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/project/musicplayer.png'
-              isBlog={false}
-              title="MusicPlayer"
-              description="基于react写的一个音乐播放器"
-              ghLink="https://github.com/dloakmi/musicPlayer"
+                primarySrc='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/project/musicplayer.png'
+                backupSrc={musicplayer}
+                isBlog={false}
+                title="MusicPlayer"
+                description="基于react写的一个音乐播放器"
+                ghLink="https://github.com/dloakmi/musicPlayer"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-                imgPath='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/project/3dgs.png'
+                primarySrc='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/project/3dgs.png'
+                backupSrc={tdgs}
                 isBlog={false}
                 title="三维重建！"
                 description="我的研究生研究方向，代码稍后即来"
@@ -62,19 +66,21 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/project/dio.png'
-              isBlog={false}
-              title="尽请期待"
-              description="尽请期待"
+                primarySrc='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/project/dio.png'
+                backupSrc={suicide}
+                isBlog={false}
+                title="尽请期待"
+                description="尽请期待"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/project/dio.png'
-              isBlog={false}
-              title="尽请期待"
-              description="尽请期待"
+                primarySrc='https://wsl-learn.obs.cn-east-317.qdrgznjszx.com/images-bed/project/dio.png'
+                backupSrc={suicide}
+                isBlog={false}
+                title="尽请期待"
+                description="尽请期待"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>

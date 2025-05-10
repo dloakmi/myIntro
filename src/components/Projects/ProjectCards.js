@@ -1,13 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
 function ProjectCards(props) {
+
+    const [picSrc, setPicSrc] = useState(props.primarySrc);
+
+    const handleError = () => {
+        if (picSrc === props.primarySrc) {
+            setPicSrc(props.backupSrc);
+        }
+    };
+
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <Card.Img variant="top" src={picSrc} alt="card-img" onError={handleError} />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
